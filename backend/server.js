@@ -17,8 +17,11 @@ const app = express();
 // Configure CORS
 app.use(
   cors({
-    // origin: ['https://campus-connect-8pea.vercel.app', 'https://cc-backend-eta.vercel.app'],
-    origin: "http://localhost:3000",
+    origin: [
+      "https://campus-trade-frontend.vercel.app",
+      "https://campus-trade-red.vercel.app",
+    ],
+
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
